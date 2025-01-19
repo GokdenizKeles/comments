@@ -1,0 +1,82 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+}
+
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  font-family: system-ui;
+}
+
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%;
+}
+
+input, button, textarea, select {
+  font: inherit;
+}
+
+p, h1, h2, h3, h4, h5, h6 {
+  overflow-wrap: break-word;
+}
+
+p {
+  text-wrap: pretty;
+}
+h1, h2, h3, h4, h5, h6 {
+  text-wrap: balance;
+}
+
+
+#root, #__next {
+  isolation: isolate;
+}
+
+.container {
+  margin-inline: auto;
+  min-width: 375px;
+  width: 60%;
+  background-color: #fff;
+  padding: 32px 48px;
+  border-radius: 16px;
+}
+
+form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  background-color: #F2F2F2;
+  padding: 24px;
+  border-radius: 15px;
+  
+  textarea {
+    grid-column: span 2;
+    border: none;
+    resize: none;
+    outline: none;
+    background-color: #F2F2F2;
+    
+  }
+  > div {
+    display: flex;
+    gap: 24px;
+  }
+  button {
+    border: none;
+    cursor: pointer;
+  }
+  .submit-btn {
+    background: #e65008;
+    color: #fff;
+    padding: 8px 16px;
+    border-radius: 24px;
+    width: 85px;
+    justify-self: end;
+  }
+}
+
